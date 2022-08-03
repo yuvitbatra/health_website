@@ -1,7 +1,15 @@
-:root{
-    --bg-support: #ec1839;
-}
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+}
+body{
+    background-color: var(--bg-black-900);
+}
 .top{
     margin-top: -5%;
 }
@@ -17,5 +25,51 @@ nav .logo{
     display:block;
     width:100%;
     height: 80%;
-    opacity: 0.4; /*can only be between 0 and 1*/
+    opacity: 0.8; /*can only be between 0 and 1*/
+}
+nav a{
+    color:black;
+    text-decoration:none;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 5px;
+    font-weight:600;
+}
+.sub-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-small;
+    color: var(--text-black-700);
+}
+.bel-img{
+    margin-top: 40%;
+}
+
+.box{
+    display: inline-block;
+    width: 150px;
+    height: 175px;
+    background-color: var(--bg-black-100);
+    cursor:pointer;
+    margin-right: 2%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+} 
+.box img{
+    width:100px;
+    height:100px;
+}
+.box a{
+    text-decoration:none;
+}
+.box a .title{
+    color:var(--text-black-900);
+}
+.float-right{
+    float: right;
+    width: 50%;
+}
+.content-center{
+    text-align: center;
 }
