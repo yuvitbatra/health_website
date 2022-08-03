@@ -1,0 +1,21 @@
+:root{
+    --bg-support: #ec1839;
+}
+
+.top{
+    margin-top: -5%;
+}
+.same-line{
+    display: inline-block;
+}
+nav .logo{
+    float: left;
+    width: 30%;
+}
+.container-fluid .section-img{
+    flood-opacity: 10%;
+    display:block;
+    width:100%;
+    height: 80%;
+    opacity: 0.4; /*can only be between 0 and 1*/
+}
