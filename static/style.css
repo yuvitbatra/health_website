@@ -7,8 +7,12 @@
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
 }
-body{
+body.main{
     background-color: var(--bg-black-900);
+}
+.pad-top-15{
+    padding-top:15px;
+    padding-left: 6%;
 }
 .top{
     margin-top: -5%;
@@ -35,6 +39,11 @@ nav a{
     font-family: 'Poppins', sans-serif;
     padding-top: 5px;
     font-weight:600;
+}
+.super-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
 }
 .sub-title{
     font-family: 'Poppins', sans-serif;
@@ -66,10 +75,26 @@ nav a{
 .box a .title{
     color:var(--text-black-900);
 }
+.round{
+    border-radius: 25px;
+    width: 75px;
+    height: 75px;
+}
 .float-right{
     float: right;
     width: 50%;
 }
 .content-center{
     text-align: center;
+}
+.hyper{
+    color:black;
+    text-decoration:none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.footer{
+    background-color: var(--text-black-900);
+    display: block;
+    height: 250px;
 }
