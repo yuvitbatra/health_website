@@ -1,3 +1,4 @@
+import datetime
 import geocoder
 from flask import Flask, render_template, redirect, request, url_for
 
@@ -21,7 +22,7 @@ def login():
     
 @app.route('/location')
 def address():
-    return location
+    return render_template('hospitals.html')
 
 if __name__ == '__main__':
     app.run()
