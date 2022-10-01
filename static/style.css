@@ -14,6 +14,12 @@ body.main{
     padding-top:15px;
     padding-left: 6%;
 }
+.pad-10{
+    padding-left:20px;
+}
+.pad-top{
+    padding-top:10px;
+}
 .top{
     margin-top: -5%;
 }
@@ -69,7 +75,7 @@ nav a{
     width:100px;
     height:100px;
 }
-.box a{
+a{
     text-decoration:none;
 }
 .box a .title{
@@ -97,4 +103,29 @@ nav a{
     background-color: var(--text-black-900);
     display: block;
     height: 250px;
+}
+.side-footer{
+    position: relative;
+    top: -20px;
+    margin:auto;
+    padding-left:40px;
+    text-align: left;
+}
+.fa {
+    color:var(--bg-black-900);
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover{
+    opacity:0.7;
+}
+.social{
+    position: relative;
+    text-align: left;
+    top:0px;
+    padding-left:40px;
 }

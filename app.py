@@ -1,19 +1,27 @@
-import time
-
-from flask import Flask, render_template, redirect, url_for
+import geocoder
+from flask import Flask, render_template, redirect, request, url_for
 
 app = Flask(__name__)
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['SECRET_KEY'] = 'data_management'
 
-@app.route('/')
-def loader():
-    return render_template('loader.html')
+#using geocoder to get user location
+g = geocoder.ip('me')
+location = g.latlng
 
-@app.route('/HomePage')
+@app.route('/')
 def HomePage():
     return render_template('layout.html')
+
+@app.route('/login', methods=['GET','POST'])
+def login():
+    if request.method == 'GET':
+        return render_template('login.html')
+    
+@app.route('/location')
+def address():
+    return location
 
 if __name__ == '__main__':
     app.run()
