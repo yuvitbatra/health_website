@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="static\style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <title>
+        Healthify:login
+        </title>
+        <link rel="icon" sizes="1140*1140" type="image/ico" href="\static\images\logo_healthify.ico">
+    </head>
+    <body background="static\images\try.jpg" class = full>
+        <section class="vh-100">
+            <div class="container py-5 h-100">
+              <div class="row d-flex align-items-center justify-content-center h-100">
+                <br><br><br>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                  <p id = 'id' style="color: White;">Login</p>
+                  <form method="post" action = '/login'>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4 size">
+                      <label class="form-label" for="form1Example13" style="color:white">Username</label>
+                      <input type="text" id="form1Example13" name = username class="form-control form-control-lg" />
+                    </div>
+                    <!-- Password input -->
+                    <div class="form-outline mb-4 size">
+                      <label class="form-label" for="form1Example23" style="color: White;">Password</label>
+                      <input type="password" name = password id="form1Example23" class="form-control form-control-lg" />
+                    </div>
+                    <!--ADD forgot password-->
+                    <div class="d-flex justify-content-around align-items-center mb-4">
+                      <a href="forgot">Forgot password?</a>
+                    </div>   
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>       
+    </body>
+</html>
