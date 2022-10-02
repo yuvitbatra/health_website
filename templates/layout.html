@@ -7,8 +7,11 @@
         tag inside the <head> element:-->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--AOS lib-->
+        <script src="js\aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--importing font awesome and bootstrap and fonts-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,31 +23,6 @@
         <link rel="icon" sizes="1140*1140" type="image/ico" href="\static\images\logo_healthify.ico">
     </head>
     <body class = main>
-        <!-- <div id = loader>
-            <h1 hidden>
-                <span class="let1">w</span>  
-                <span class="let2">e</span>  
-                <span class="let3">l</span>  
-                <span class="let4">c</span>  
-                <span class="let5">o</span>  
-                <span class="let6">m</span>  
-                <span class="let7">e</span>
-                <br><br>
-                <span class="let1">t</span>
-                <span class="let7">o</span>
-                <br><br>
-                <span class="let1">h</span>  
-                <span class="let2">e</span>  
-                <span class="let3">a</span>  
-                <span class="let3">l</span>
-                <span class="let4">t</span>  
-                <span class="let5">h</span>  
-                <span class="let6">i</span>  
-                <span class="let7">f</span>  
-                <span class="let8">f</span>  
-              </h1>
-        </div>-->
-        <!-- <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_kyh99bft.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player> -->
         <div id = main>
             <div>
                 <div class="container-fluid">
@@ -69,28 +47,28 @@
             </div>
             <div class = bel-img>
                 <div class = 'content-center'>
-                    <div class="box">
+                    <div class="box" data-aos="fade-right" data-aos-duration="3000">
                         <a href = '#' style="display:block; background-color:cornflowerblue; border-radius: 15px 15px 0 0;"><img src="static\images\dweb_instant_video_consulation.webp"  alt=""></a>
                         <a href = '#'><p class="title">Instant Video Consulation</p>
                         <p class="sub-title">Connect within 60 Seconds</p></a>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-right" data-aos-duration="3000">
                         <a href = '#' style="display:block; background-color:gray; border-radius: 15px 15px 0 0;"><img src="static\images\best_doc.png"  alt=""></a>
                         <a href="#"><p class="title">Find a specialist near you</p>
                         <p class="sub-title">A professional for all your needs</p></a>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-up" data-aos-duration="3000">
                         <a href = '#' style="display:block; background-color:burlywood; border-radius: 15px 15px 0 0;"><img src="static\images\fortis.png"  alt=""></a>
                         <a href="#"><p class="title">Find the nearest hospital</p>
                         <p class="sub-title">Get first aid care fast</p></a>
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-left" data-aos-duration="3000">
                         <a href = '#'style="display:block; background-color:plum; border-radius: 15px 15px 0 0;"><img src="static\images\download-removebg-preview.png"  alt=""></a>
                         <a href="#"><p class="title">Book an appointment</p>
                         <p class="sub-title">All the best hospitals available</p></a>
 
                     </div>
-                    <div class="box">
+                    <div class="box" data-aos="fade-left" data-aos-duration="3000">
                         <a href = '#'style="display:block; background-color:skyblue;; border-radius: 15px 15px 0 0;"><img src="static\images\main-qimg-60a1a49457e1ae6309f5e7ab8b19f5c9-removebg-preview.png"  alt=""></a>
                         <a href="#"><p class="title">Get reminders to order medicinces</p>
                         <p class="sub-title">Keep track of all your needs</p></a>
@@ -172,5 +150,9 @@
                 </div>
             </div>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
